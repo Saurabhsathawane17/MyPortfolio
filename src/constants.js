@@ -24,9 +24,13 @@ import ghrceLogo from './assets/education_logo/ghrce_logo.png';
 //projects section logo's
 import movierecLogo from './assets/work_logo/movie_recommendation.jpg';
 import cropPredLogo from './assets/work_logo/crop_prediction.jpg';
+import CodeSenseLogo from './assets/work_logo/CodeSense.png';
+import ScoreSightLogo from './assets/work_logo/ScoreSight.jpg';
 
 //experience logo's
 import kshitijFoundLogo from './assets/work_logo/kshitij_foundation.jpg';
+import Infosys_SpringboardLogo from './assets/work_logo/infosys_springboard.png';
+import InternpeLogo from './assets/work_logo/Internpe.jpg';
 
 export const SkillsInfo = [
   {
@@ -51,9 +55,9 @@ export const SkillsInfo = [
     skills: [
       { name: 'C', logo: cLogo },
       { name: 'C++', logo: cppLogo },
-      { name: 'Java', logo: javaLogo },
+      //{ name: 'Java', logo: javaLogo },
       { name: 'Python', logo: pythonLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
+      //{ name: 'JavaScript', logo: javascriptLogo },
     ],
   },
   {
@@ -72,6 +76,26 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
+    img:Infosys_SpringboardLogo,
+    role: "AI ML Intern",
+    company: "Infosys",
+    date: "18th Sept,2025 - 18th Oct 2025",
+    desc: "Successfully completed the Infosys Springboard 6.0 internship with hands-on training in Python, Machine Learning, and data analytics. As part of the internship, developed an end-to-end EPL Football Analytics application – ScoreSight- Predicting EPL Points Tally, Top Scorer, and Assist Provider using Machine Learning techniques. The project included features such as live match updates, team stats, player performance analysis, standings, and an AI-powered chatbot powered by Gemini for football insights. Gained practical experience in data preprocessing, model training, and evaluation while working on real-world datasets. Collaborated with a team of interns to enhance the application's features and improve prediction accuracy. Presented the project to mentors and received positive feedback for innovation and technical skills demonstrated during the internship.",
+    skills: [
+      "Python Programming",
+      "Machine Learning",
+      "Data Analytics",
+      "Data Preprocessing",
+      "Model Training & Evaluation",
+      "Web Development",
+      "Team Collaboration",
+      "Problem-Solving",
+      "Communication Skills",
+      "Time Management",
+    ],
+  },
+  {
+    id: 1,
     img:kshitijFoundLogo,
     role: "Marathi content Writer & Batch Team Leader",
     company: "Kshitij Foundation (NGO)",
@@ -90,6 +114,20 @@ export const experiences = [
       "Time Management",
     ],
   },
+  {
+    id: 2,
+    img:InternpeLogo,
+    role: "AI ML Intern",
+    company: "Internpe",
+    date: "15th May,2024 - 15th June,2024",
+    desc: "Completed a 4-week remote internship focused on AI and Machine Learning. Worked on 4 task-based ML projects, gaining hands-on experience in data preprocessing, model development, evaluation, and visualization using Python and popular ML libraries.",
+    skills: [
+      "Python Programming",
+      "Data Preprocessing",
+      "Data Visualization",
+      "Data Analysis",
+    ],
+  },
 ];
 
 //projects section
@@ -101,7 +139,7 @@ export const projects = [
     "Developed a personalized movie recommendation system that suggests relevant films based on user preferences and movie features. The system uses both content-based filtering and collaborative filtering to improve recommendation accuracy and user engagement.",
     image: movierecLogo,
     tags: ["Python","Flask","JupyterNotebook","Pycharm","Machine Learning"],
-    //github:,
+    github: "https://github.com/Saurabhsathawane17/Movie-Recommendation-System-using-Machine-Learning.git",
     //webapp:,
   },
   {
@@ -111,9 +149,28 @@ export const projects = [
     "Built a machine learning-based system to predict the most suitable crop for cultivation based on soil nutrients (NPK), pH, rainfall, temperature, and humidity. Trained and tested multiple algorithms to identify the most accurate model, aiding farmers in decision-making for optimized yield.",
     image: cropPredLogo,
     tags: ["HTML","CSS","Python","Machine Learning","Flask"],
-    //github: "",
+    github: "https://github.com/Saurabhsathawane17/crop-prediction-system.git",
     //webapp: "",
-  }
+  },
+  {
+    id: 2,
+    title: "CODESENSE – AI-Powered Code Reviewer",
+    description: "CODESENSE is an AI-powered code review system built with the MERN stack and integrated with Google Generative AI (Gemini API). The application allows users to submit their code for review. The AI analyzes it, identifies errors, and suggests improvements. It also provides syntax highlighting, Markdown formatting, and real-time feedback to enhance the developer experience.",
+    image: CodeSenseLogo,
+    tags: ["MERN Stack","Node.js","Express.js","React.js","MongoDB","Google Generative AI"],
+    github: "https://github.com/Saurabhsathawane17/CODESENSE-AI-Powered-Code-Reviewer.git",
+    //webapp: "",
+  },
+  {
+    id: 3,
+    title: "ScoreSight - Predicting EPL Points Tally & Top Scorer using Machine Learning",
+    description: "ScoreSight is an advanced football analytics platform designed to provide real-time match insights, team statistics, fixtures, standings, player information, and AI-powered analysis. The platform integrates various free football APIs and incorporates AI/ML components for enhanced user experience.",
+    image: ScoreSightLogo,
+    tags: ["Python","Flask","Machine Learning","APIs","AI Chatbot"],
+    github: "https://github.com/Saurabhsathawane17/ScoreSight-Predicting-EPL-Points-Tally-Top-Scorer.git",
+    //webapp: "",
+  },
+
 ];
 
 //education section
