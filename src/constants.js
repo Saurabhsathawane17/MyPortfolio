@@ -29,7 +29,7 @@ import ScoreSightLogo from './assets/work_logo/ScoreSight.jpg';
 
 //experience logo's
 import kshitijFoundLogo from './assets/work_logo/kshitij_foundation.jpg';
-import Infosys_SpringboardLogo from './assets/work_logo/infosys_springboard.png';
+import Infosys_SpringboardLogo from './assets/work_logo/Infosys_Springboard.png';
 import InternpeLogo from './assets/work_logo/Internpe.jpg';
 
 export const SkillsInfo = [
