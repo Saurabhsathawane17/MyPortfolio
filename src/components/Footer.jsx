@@ -36,8 +36,8 @@ const Footer = () => {
         {/*social media */}
         <div className='flex flex-wrap justify-center space-x-4 mt-6'>
           {[
-            {icon: <FaLinkedin />,link:"https://FaLinkedin/in/saurabh-sathawane-64690430a"},
-            {icon: <FaInstagram />,link:"https://FaInstagram/saurabhsathawane16"},
+            {icon: <FaLinkedin />,link:"https://Linkedin.com/in/saurabh-sathawane"},
+            {icon: <FaInstagram />,link:"https://www.instagram.com/saurabhsathawane_16"},
           ].map((item,index) =>(
             <a
             key={index}
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
         {/*copyright text*/}
         <p className='text-sm text-gray-400 mt-6'>
-        © 2025 Saurabh Sathawane. All rights reserved.
+        © 2026 Saurabh Sathawane. All rights reserved.
         </p>
       </div>
     </footer>

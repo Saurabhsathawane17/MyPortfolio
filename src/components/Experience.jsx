@@ -19,15 +19,15 @@ const Experience = () => {
 
       <div className="relative">
         {/* Vertical Timeline Line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-[3px] bg-white h-full opacity-40"></div>
+        <div className="absolute sm:left-1/2 left-8 transform -translate-x-1/2 w-[3px] bg-white h-full opacity-40"></div>
 
         {experiences.map((experience, index) => (
           <div
             key={experience.id}
-            className={`relative flex flex-col sm:flex-row items-center mb-24`}
+            className={`relative flex flex-col sm:flex-row items-start sm:items-center mb-24`}
           >
             {/* Timeline Circle */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-2 bg-gray-300 border-4 border-[#8245ec] w-12 h-12 sm:w-14 sm:h-14 rounded-full flex justify-center items-center z-20 shadow-lg">
+            <div className="absolute sm:left-1/2 left-8 transform -translate-x-1/2 -translate-y-2 bg-gray-300 border-4 border-[#8245ec] w-12 h-12 sm:w-14 sm:h-14 rounded-full flex justify-center items-center z-20 shadow-lg">
               <img
                 src={experience.img}
                 alt={experience.company}
@@ -38,13 +38,13 @@ const Experience = () => {
             {/* Experience Card */}
             <div
               className={`
-                w-full sm:max-w-xl lg:max-w-2xl 
+                w-[calc(100%-4rem)] sm:w-full sm:max-w-xl lg:max-w-2xl  
                 bg-gray-900 backdrop-blur-md
                 border border-white/20 
                 rounded-2xl shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]
                 p-6 sm:p-8 
                 transform transition duration-300 hover:scale-[1.03]
-                ${index % 2 === 0 ? "sm:ml-[55%]" : "sm:mr-[55%]"}
+                ${index % 2 === 0 ? "ml-16 sm:ml-[55%]" : "ml-16 sm:ml-0 sm:mr-[55%]"}
               `}
             >
               {/* Header Section */}
@@ -52,7 +52,8 @@ const Experience = () => {
                 <div className="w-16 h-16 bg-white rounded-md overflow-hidden shadow-md">
                   <img
                     src={experience.img}
-                    alt={experience.company}
+                    alt=""
+                    aria-hidden="true"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -75,9 +76,9 @@ const Experience = () => {
               <div className="mt-4">
                 <h5 className="font-medium text-white">Skills:</h5>
                 <ul className="flex flex-wrap mt-2">
-                  {experience.skills.map((skill, idx) => (
+                  {experience.skills.map((skill) => (
                     <li
-                      key={idx}
+                      key={skill}
                       className="bg-[#8245ec] text-gray-200 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400"
                     >
                       {skill}

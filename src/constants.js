@@ -1,4 +1,4 @@
-//skills section logo's
+//skills section logos
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
@@ -16,21 +16,22 @@ import postgreLogo from './assets/tech_logo/postgre.png';
 import colabLogo from './assets/tech_logo/colab-logo.png';
 import jupyterLogo from './assets/tech_logo/jupyter-logo.png';
 
-//education section logo
+//education section logos
 import sunflagLogo from './assets/education_logo/sunflag_img.jpg';
 import springDaleLogo from './assets/education_logo/spring_dale_logo.jpg';
 import ghrceLogo from './assets/education_logo/ghrce_logo.png';
 
-//projects section logo's
+//projects section logos
 import movierecLogo from './assets/work_logo/movie_recommendation.jpg';
 import cropPredLogo from './assets/work_logo/crop_prediction.jpg';
 import CodeSenseLogo from './assets/work_logo/CodeSense.png';
 import ScoreSightLogo from './assets/work_logo/ScoreSight.jpg';
 
-//experience logo's
+//experience logos
 import kshitijFoundLogo from './assets/work_logo/kshitij_foundation.jpg';
 import Infosys_SpringboardLogo from './assets/work_logo/Infosys_Springboard.png';
 import InternpeLogo from './assets/work_logo/Internpe.jpg';
+import Low_LatencyLogo from './assets/work_logo/Low-Latency.jpg';
 
 export const SkillsInfo = [
   {
@@ -50,14 +51,12 @@ export const SkillsInfo = [
       { name: 'PostgreSQL', logo: postgreLogo },
     ],
   },
-    {
+  {
     title: 'Languages',
     skills: [
       { name: 'C', logo: cLogo },
       { name: 'C++', logo: cppLogo },
-      //{ name: 'Java', logo: javaLogo },
       { name: 'Python', logo: pythonLogo },
-      //{ name: 'JavaScript', logo: javascriptLogo },
     ],
   },
   {
@@ -67,7 +66,7 @@ export const SkillsInfo = [
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'colab', logo: colabLogo },
-      { name: 'jupyter',logo: jupyterLogo}
+      { name: 'jupyter', logo: jupyterLogo }
     ],
   },
 ];
@@ -76,10 +75,33 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
+    img:Low_LatencyLogo,
+    role: "AI Engineer Trainee",
+    company: "Low-Latency Technologies Pvt. Ltd. Pune, Maharashtra",
+    date: "1st Dec, 2025 - 15th May 2026",
+    desc: "Worked as an AI Engineer Trainee on an end-to-end healthcare solution using Agentic AI and Machine Learning for Patient Risk Assessment and clinical decision support. Designed intelligent models using parameters like BMI, blood pressure, and lifestyle data, and integreated LLMs to generate clear, explainable insights. Built the complete pipeline from data preprocessing to real-time inference, developed Flask-based APIs, and created an interactive dashboard for visualizing risk scores and recommendations. Gained hands-on experience in building scalable, explainable, and user-centric AI systems.",
+    skills: [
+      "Python Programming",
+      "Machine Learning",
+      "Data Analytics",
+      "Data Preprocessing",
+      "Model Training & Evaluation",
+      "Web Development",
+      "Team Collaboration",
+      "Problem-Solving",
+      "Communication Skills",
+      "Time Management",
+      "Agentic AI",
+      "LLM Integration & Prompt Engineering",
+      "Explainable AI",
+    ],
+  },
+  {
+    id: 1,
     img:Infosys_SpringboardLogo,
     role: "AI ML Intern",
     company: "Infosys",
-    date: "18th Sept,2025 - 18th Oct 2025",
+    date: "18th Sept, 2025 - 18th Oct 2025",
     desc: "Successfully completed the Infosys Springboard 6.0 internship with hands-on training in Python, Machine Learning, and data analytics. As part of the internship, developed an end-to-end EPL Football Analytics application – ScoreSight- Predicting EPL Points Tally, Top Scorer, and Assist Provider using Machine Learning techniques. The project included features such as live match updates, team stats, player performance analysis, standings, and an AI-powered chatbot powered by Gemini for football insights. Gained practical experience in data preprocessing, model training, and evaluation while working on real-world datasets. Collaborated with a team of interns to enhance the application's features and improve prediction accuracy. Presented the project to mentors and received positive feedback for innovation and technical skills demonstrated during the internship.",
     skills: [
       "Python Programming",
@@ -95,11 +117,11 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     img:kshitijFoundLogo,
     role: "Marathi content Writer & Batch Team Leader",
     company: "Kshitij Foundation (NGO)",
-    date: "10th Feb,2025 - 28th May 2025",
+    date: "10th Feb, 2025 - 28th May 2025",
     desc: "Kshitij Foundation is a non-profit organization dedicated to uplifting underprivileged communities through impactful initiatives in education, healthcare, skill development, and social awareness.In my dual role as a Marathi Content Writer and Team Leader, I am responsible for planning, coordinating, and implementing content-driven and community-focused activities. I create culturally relevant and impactful Marathi content to raise awareness and engage local communities effectively. As a Team Leader, I oversee and guide a batch of volunteers, ensuring smooth execution of initiatives on the ground and fostering collaboration to achieve the Foundation’s mission of real, positive social impact.",
     skills: [
       "Marathi Content Writing",
@@ -115,11 +137,11 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     img:InternpeLogo,
     role: "AI ML Intern",
     company: "Internpe",
-    date: "15th May,2024 - 15th June,2024",
+    date: "15th May, 2024 - 15th June, 2024",
     desc: "Completed a 4-week remote internship focused on AI and Machine Learning. Worked on 4 task-based ML projects, gaining hands-on experience in data preprocessing, model development, evaluation, and visualization using Python and popular ML libraries.",
     skills: [
       "Python Programming",
@@ -140,7 +162,7 @@ export const projects = [
     image: movierecLogo,
     tags: ["Python","Flask","JupyterNotebook","Pycharm","Machine Learning"],
     github: "https://github.com/Saurabhsathawane17/Movie-Recommendation-System-using-Machine-Learning.git",
-    //webapp:,
+    webapp: "",
   },
   {
     id: 1,
@@ -150,7 +172,7 @@ export const projects = [
     image: cropPredLogo,
     tags: ["HTML","CSS","Python","Machine Learning","Flask"],
     github: "https://github.com/Saurabhsathawane17/crop-prediction-system.git",
-    //webapp: "",
+    webapp: "",
   },
   {
     id: 2,
@@ -159,7 +181,7 @@ export const projects = [
     image: CodeSenseLogo,
     tags: ["MERN Stack","Node.js","Express.js","React.js","MongoDB","Google Generative AI"],
     github: "https://github.com/Saurabhsathawane17/CODESENSE-AI-Powered-Code-Reviewer.git",
-    //webapp: "",
+    webapp: "",
   },
   {
     id: 3,
@@ -168,7 +190,7 @@ export const projects = [
     image: ScoreSightLogo,
     tags: ["Python","Flask","Machine Learning","APIs","AI Chatbot"],
     github: "https://github.com/Saurabhsathawane17/ScoreSight-Predicting-EPL-Points-Tally-Top-Scorer.git",
-    //webapp: "",
+    webapp: "",
   },
 
 ];
@@ -181,7 +203,7 @@ export const education = [
     img: ghrceLogo,
     school: "G. H. Raisoni College of Engineering, Nagpur Maharashtra",
     date: "Nov 2022 - June 2026",
-    grade:"5th Semester- 9.06 CGPA",
+    grade:"7th Semester- 9.01 CGPA",
     desc: "Currently I'm pursuing my Bachelor of Technology with specialization in Artificial Intelligence from GHRCE, Nagpur.",
     degree:"Bachelor of Technology - B.Tech (Artificial Intelligence)",
   },
@@ -191,7 +213,7 @@ export const education = [
     school: "Sunny's Spring Dale School, Bhandara Maharashtra",
     date: "June 2020 - May 2022",
     grade: "70.33%",
-    desc: "I completed my class 12th education from Sunny's Spring Dale School, Bhandara, under the State Board, where I studied Physics, Chemistry, Mathematics, and Biology (PCMB) with Information Technology",
+    desc: "I completed my class 12th education from Sunny's Spring Dale School, Bhandara, under the State Board, where I studied Physics, Chemistry, Mathematics, and Biology (PCMB) with Information Technology.",
     degree: "HSC (XII) - PCMB with Information Technology", 
   },
   {
@@ -199,8 +221,8 @@ export const education = [
     img:sunflagLogo,
     school:"Sunflag School, Bhandara Road, Warthi Maharashtra",
     date: "April 2017 - June 2020",
-    grade: "80.04%",
-    desc: "I completed my class 10th education from Sunflag School, Bhandara Road, Warthi Maharastra, under the CBSE board, where I studied Science with Computer Science",
+    grade: "80.4%",
+    desc: "I completed my class 10th education from Sunflag School, Bhandara Road, Warthi Maharashtra, under the CBSE board, where I studied Science with Computer Science.",
     degree: "CBSE(X), Science with Computer Science",
   },
 ]

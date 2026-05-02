@@ -7,12 +7,12 @@ const Navbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [activeSection, setActiveSection] = useState("");
-    const [isScrolled, SetIsScrolled] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     //check scroll and check navbar background
     useEffect(() => {
       const handleScroll = () => {
-        SetIsScrolled(window.scrollY > 50)
+        setIsScrolled(window.scrollY > 50)
       };
       window.addEventListener("scroll", handleScroll);
       return () => window.removeEventListener("scroll",handleScroll);
@@ -54,11 +54,11 @@ const Navbar = () => {
             </div>
 
             {/*Desktop*/}
-            <ul className='md:flex space-x-8 text-grey-300'>
+            <ul className='hidden md:flex space-x-8 text-grey-300'>
                 {menuItems.map((item) =>(
-                    <li key={item.id} className='cursor-pointer hover:text-[#8245ec] ${
-                    activeSection === item.id ? "text-[#8245ec]" : ""
-                    }'>
+                    <li key={item.id} className={`cursor-pointer hover:text-[#8245ec] ${
+                      activeSection === item.id ? "text-[#8245ec]" : ""
+                    }`}>
                         <button onClick={() => handleMenuItemClick(item.id)}>
                             {item.label}
                         </button>
@@ -108,9 +108,10 @@ const Navbar = () => {
                 </button>
                 </li>
             ))}
+            <li>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/Saurabhsathawne17"
+                href="https://github.com/Saurabhsathawane17"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
@@ -126,6 +127,7 @@ const Navbar = () => {
                 <FaLinkedin size={24} />
               </a>
             </div>
+            </li>
           </ul>
         </div>
       )}
