@@ -48,8 +48,8 @@ const Experience = () => {
               `}
             >
               {/* Header Section */}
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden shadow-md">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-4">
+                <div className="w-16 h-16 mb-4 sm:mb-0 bg-white rounded-md overflow-hidden shadow-md shrink-0">
                   <img
                     src={experience.img}
                     alt=""
@@ -58,11 +58,11 @@ const Experience = () => {
                   />
                 </div>
 
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white break-words">
                     {experience.role}
                   </h3>
-                  <h4 className="text-gray-300 text-sm">{experience.company}</h4>
+                  <h4 className="text-gray-300 text-sm break-words">{experience.company}</h4>
                   <p className="text-gray-500 text-sm mt-1">{experience.date}</p>
                 </div>
               </div>
