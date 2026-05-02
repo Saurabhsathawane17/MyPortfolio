@@ -19,4 +19,4 @@ A modern, animated portfolio built with React and Tailwind CSS—designed for de
 - Through this project I learn about installation, interaction of tailwind with react, react components, basic styling.
    
 ## Deployment
-- This project is deployed using the Vercel which free to deploy.
+- This project is deployed using the Render which free to deploy.
