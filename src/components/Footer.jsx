@@ -10,7 +10,7 @@ const Footer = () => {
     }
   };
   return (
-    <footer className='text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]'>
+    <footer className='text-gray-900 dark:text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw] transition-colors duration-300'>
       <div className='container mx-auto text-center'>
         <h2 className='text-xl font-semibold text-purple-500'>
           Saurabh Sathawane
@@ -51,7 +51,7 @@ const Footer = () => {
           ))}
         </div>
         {/*copyright text*/}
-        <p className='text-sm text-gray-400 mt-6'>
+        <p className='text-sm text-gray-600 dark:text-gray-400 mt-6 transition-colors'>
         © 2026 Saurabh Sathawane. All rights reserved.
         </p>
       </div>

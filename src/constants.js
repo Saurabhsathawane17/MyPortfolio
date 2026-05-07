@@ -226,3 +226,33 @@ export const education = [
     degree: "CBSE(X), Science with Computer Science",
   },
 ]
+
+// certifications section
+export const certifications = [
+  {
+    id: 0,
+    title: "Machine Learning Specialization",
+    issuer: "Stanford University & DeepLearning.AI",
+    date: "August 2024",
+    desc: "Learned supervised and unsupervised learning, neural networks, and advanced machine learning techniques.",
+    link: "#", // Add your verification link here
+    img: "", // Add a logo for the issuer if you want
+  },
+  {
+    id: 1,
+    title: "Data Analytics Foundation",
+    issuer: "Google",
+    date: "January 2024",
+    desc: "Completed foundational training in data preparation, cleaning, and visualization.",
+    link: "#",
+    img: "", 
+  }
+];
+
+// metrics/stats section
+export const metrics = [
+  { id: 0, title: "Projects Completed", value: "10+" },
+  { id: 1, title: "Hackathons Participated", value: "3" },
+  { id: 2, title: "Models Created/Deployed", value: "5" },
+  { id: 3, title: "CGPA", value: "9.01" },
+];

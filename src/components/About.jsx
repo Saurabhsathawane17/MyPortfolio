@@ -12,14 +12,14 @@ const About = () => {
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         {/* Left Side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2 leading-tight transition-colors">
             Hi, I am
           </h1>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 leading-tight transition-colors">
             Saurabh Sathawane
           </h2>
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
-            <span className="text-white">I am a </span>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight transition-colors">
+            <span className="text-gray-900 dark:text-white transition-colors">I am a </span>
             <ReactTypingEffect
               text={['AI ML Engineer', 'Python Developer','Data Science Enthusiast', 'AI Research Enthusiast']}
               speed={100}
@@ -31,10 +31,8 @@ const About = () => {
               )}
             ></ReactTypingEffect>
           </h3>
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            Enthusiastic Bachelor of Engineering student with a strong passion for Artificial intelligence, eager to apply
-            theoretical knowledge practically in real world AI and Machine learning related project. Actively seeking
-            opportunities to contribute and grow in the dynamic and rapidly growing field of Artificial intelligence
+          <p className="text-base sm:text-lg md:text-lg text-gray-600 dark:text-gray-400 mb-10 mt-8 leading-relaxed transition-colors">
+            Passionate Artificial Intelligence and Machine Learning enthusiast pursuing a Bachelor of Engineering in AI, focused on building intelligent, real-world solutions through innovative projects and practical problem-solving. Skilled in developing AI-powered applications, machine learning models, and modern web solutions, with a strong interest in creating impactful technology that solves real-life challenges.
           </p>
             <a
                 href="./public/Saurabh sathawane (5).pdf"

@@ -5,13 +5,13 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans dark:bg-skills-gradient clip-path-custom-3 transition-colors duration-300"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white transition-colors">EDUCATION</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
+        <p className="text-gray-600 dark:text-gray-400 mt-4 text-lg font-semibold transition-colors">
           My education has been a journey of learning and development. Here are the details of my academic background
         </p>
       </div>
@@ -19,7 +19,7 @@ const Education = () => {
       {/* Education Timeline */}
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute sm:left-1/2 left-8 transform -translate-x-1/2 w-[3px] bg-white h-full opacity-40"></div>
+        <div className="absolute sm:left-1/2 left-8 transform -translate-x-1/2 w-[3px] bg-gray-300 dark:bg-white h-full opacity-40 transition-colors"></div>
 
         {/* Education Entries */}
         {education.map((edu, index) => (
@@ -40,9 +40,9 @@ const Education = () => {
             <div
               className={`
                 w-[calc(100%-4rem)] sm:w-full sm:max-w-xl lg:max-w-2xl 
-                bg-gray-900 backdrop-blur-md
-                border border-white/20 
-                rounded-2xl shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]
+                bg-gray-50 dark:bg-gray-900 backdrop-blur-md
+                border border-gray-200 dark:border-white/20 
+                rounded-2xl shadow-sm dark:shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] transition-colors duration-300
                 p-6 sm:p-8 
                 transform transition duration-300 hover:scale-[1.03]
                 ${index % 2 === 0 ? "ml-16 sm:ml-[55%]" : "ml-16 sm:ml-0 sm:mr-[55%]"}
@@ -63,10 +63,10 @@ const Education = () => {
                 {/* Degree, School Name, and Date */}
                 <div className="flex flex-col justify-between flex-1 min-w-0">
                   <div>
-                    <h3 className="text-xl sm:text-xl font-semibold text-white break-words">
+                    <h3 className="text-xl sm:text-xl font-semibold text-gray-900 dark:text-white break-words transition-colors">
                       {edu.degree}
                     </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300 break-words">
+                    <h4 className="text-md sm:text-sm text-gray-700 dark:text-gray-300 break-words transition-colors">
                       {edu.school}
                     </h4>
                   </div>
@@ -75,8 +75,8 @@ const Education = () => {
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-400 font-bold break-words">Grade: {edu.grade}</p>
-              <p className="mt-4 text-gray-400 break-words">{edu.desc}</p>
+              <p className="mt-4 text-gray-700 dark:text-gray-400 font-bold break-words transition-colors">Grade: {edu.grade}</p>
+              <p className="mt-4 text-gray-600 dark:text-gray-400 break-words transition-colors">{edu.desc}</p>
             </div>
           </div>
         ))}
