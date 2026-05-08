@@ -35,7 +35,7 @@ const About = () => {
             Passionate Artificial Intelligence and Machine Learning enthusiast pursuing a Bachelor of Engineering in AI, focused on building intelligent, real-world solutions through innovative projects and practical problem-solving. Skilled in developing AI-powered applications, machine learning models, and modern web solutions, with a strong interest in creating impactful technology that solves real-life challenges.
           </p>
             <a
-                href="./public/Saurabh sathawane (5).pdf"
+                href="./public/Saurabh_AI_26.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -43,7 +43,7 @@ const About = () => {
                 boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
                 }}
                 >
-                DOWNLOAD CV
+                VIEW RESUME
             </a>
         </div>
         {/* Right Side */}

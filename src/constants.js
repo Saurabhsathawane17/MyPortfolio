@@ -26,6 +26,10 @@ import movierecLogo from './assets/work_logo/movie_recommendation.jpg';
 import cropPredLogo from './assets/work_logo/crop_prediction.jpg';
 import CodeSenseLogo from './assets/work_logo/CodeSense.png';
 import ScoreSightLogo from './assets/work_logo/ScoreSight.jpg';
+import InvoiceRiskLogo from './assets/work_logo/InvoiceRiskAnalyzer.png';
+import MultiAgentLogo from './assets/work_logo/MultiAgentResearch.png';
+import PatientRiskLogo from './assets/work_logo/PatientRiskAssessment.png';
+import ECommerceLogo from './assets/work_logo/E-Commerce.png'
 
 //experience logos
 import kshitijFoundLogo from './assets/work_logo/kshitij_foundation.jpg';
@@ -190,6 +194,42 @@ export const projects = [
     image: ScoreSightLogo,
     tags: ["Python","Flask","Machine Learning","APIs","AI Chatbot"],
     github: "https://github.com/Saurabhsathawane17/ScoreSight-Predicting-EPL-Points-Tally-Top-Scorer.git",
+    webapp: "",
+  },
+  {
+    id: 4,
+    title: "Vendor Invoice Intelligent System using Machine Learning",
+    description: "Developed an AI-powered invoice intelligence platform for freight cost prediction and invoice risk analysis using Machine Learning algorithms. Integrated SHAP-based Explainable AI (XAI) for transparent predictions and built an interactive Streamlit dashboard for real-time analytics, anomaly detection, and business insights.",
+    image: InvoiceRiskLogo,
+    tags: ["Python","Flask","Machine Learning","Streamlit","SHAP","Explainable AI","Data Visualization","Data Analytics"],
+    github: "https://github.com/Saurabhsathawane17/vendor-invoice-intelligence-system.git",
+    webapp: "",
+  },
+  {
+    id: 5,
+    title: "Multi-Agent Research System",
+    description: "Built an AI-powered multi-agent research system capable of autonomous web research, information retrieval, intelligent summarization, and task orchestration using Large Language Models (LLMs) and agent-based workflows. Designed the platform to automate complex research tasks, generate contextual insights, and improve decision-making efficiency through collaborative AI agents.",
+    image: MultiAgentLogo,
+    tags: ["Python","Flask","Machine Learning","Streamlit","SHAP","Explainable AI","Data Visualization","Data Analytics"],
+    github: "https://github.com/Saurabhsathawane17/multi-agent-research-system.git",
+    webapp: "",
+  },
+  {
+    id: 6,
+    title: "Patient AI Risk Prediction & Assessment using Agentic AI",
+    description: "Developed an intelligent healthcare risk prediction platform leveraging Agentic AI, Machine Learning, and autonomous AI agents for patient health assessment and predictive analysis. Integrated Explainable AI techniques to generate transparent clinical insights, risk evaluations, and data-driven recommendations through an interactive analytics dashboard.",
+    image: PatientRiskLogo,
+    tags: ["Python","Agentic AI","GenAI","LLM's","API","Machine Learning","Explainable AI","Data Visualization","Data Analytics","Healthcare Analytics"],
+    github: "https://github.com/Saurabhsathawane17/Patient-risk-assessment-agentic-ai.git",
+    webapp: "",
+  },
+  {
+    id: 7,
+    title: "E-Commerce BI Project",
+    description: "Developed a data-driven Business Intelligence platform for e-commerce analytics, enabling sales forecasting, customer behavior analysis, revenue tracking, and business performance visualization. Built interactive dashboards and analytical models to transform raw business data into actionable insights for strategic decision-making.",
+    image: ECommerceLogo,
+    tags: ["Business Intelligence","Data Analytics","Data Visualization","SQL","Power BI","Sales Forecasting","Customer Analytics","Dashboard Development"],
+    github: "https://github.com/Saurabhsathawane17/E-commerce_BI_Project.git",
     webapp: "",
   },
 
