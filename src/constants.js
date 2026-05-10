@@ -271,10 +271,10 @@ export const education = [
 export const certifications = [
   {
     id: 0,
-    title: "Copyright Certificate for Behavior-Based Continuous Authentication System",
-    issuer: "Copyright Office, Government of India",
-    date: "February 2026",
-    desc: "Received a Copyright Certificate from the Copyright Office, Government of India for the innovative project ‘Behavior-Based Continuous Authentication System’, recognizing the originality and intellectual contribution of the developed authentication and security solution.",
+    title: "Engineer AI Agents with Agent Development Kit (ADK)",
+    issuer: "Google Cloud",
+    date: "May 2026",
+    desc: "Earned the Engineer AI Agents with ADK skill badge by building AI agents, preparing transformer datasets, developing tokenizers, and training small language models for real-world NLP applications.",
     link: "#",
     img: "",
   },
